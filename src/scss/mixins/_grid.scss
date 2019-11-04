@@ -1,0 +1,97 @@
+// mixins
+
+
+
+
+
+/* FULL WIDTH MIXINS */
+
+// MAKE A FULL WIDTH WRAPPER
+@mixin make-wrapper-max-widths($max-widths: $container-max-widths, $breakpoints: $grid-breakpoints) {
+
+	@each $breakpoint,
+	$container-max-width in $max-widths {
+		@include media-breakpoint-up($breakpoint, $breakpoints) {
+			max-width: $container-max-width;
+			padding-right: $container-padding-x;
+			padding-left: $container-padding-x;
+		}
+	}
+}
+
+// MAKE A FULL WIDTH CONTAINER
+@mixin make-container-max-widths($max-widths: $container-max-widths, $breakpoints: $grid-breakpoints) {
+
+	@each $breakpoint,
+	$container-max-width in $max-widths {
+		@include media-breakpoint-up($breakpoint, $breakpoints) {
+			max-width: ($container-max-width) - ($container-padding-x * 2);
+			padding-right: $container-padding-x;
+			padding-left: $container-padding-x;
+
+		}
+	}
+}
+
+
+
+
+/// Grid system
+//
+// Generate semantic grid columns with these mixins.
+
+/* 
+	SECTION 
+*/
+
+// CHANGE TO: SECTION //
+@mixin make-wrapper($padding-x: $container-padding-x) {
+	width: 100%;
+
+	margin-right: auto;
+	margin-left: auto;
+}
+
+// For each breakpoint, define the maximum width of the container in a media query
+@mixin make-wrapper-max-widths($max-widths: $container-max-widths, $breakpoints: $grid-breakpoints) {
+
+	@each $breakpoint, $container-max-width in $max-widths {
+		@include media-breakpoint-up($breakpoint, $breakpoints) {
+			max-width: $container-max-width;
+		}
+	}
+}
+
+/* 
+	CONTAINER 
+*/
+
+
+
+@mixin make-container($size, $columns: $grid-columns) {
+	display: flex;
+	flex-flow: row wrap;
+	@supports (display: grid) {
+		grid-template-columns: repeat($size, 1fr);
+		display: grid;
+	}
+	@include make-grid-columns($size);
+	
+}
+
+
+/* 
+	COLUMN 
+*/
+
+
+@mixin make-col($size, $columns: $grid-columns) {
+	
+	flex: 0 0 percentage($size / $columns);
+	max-width: percentage($size / $columns);
+
+	@supports (display: grid) {
+		grid-column: span $size;
+		max-width: none;
+	}
+}
