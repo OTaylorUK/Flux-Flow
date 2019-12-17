@@ -9,36 +9,3 @@
 // @import "scss/grid";
 
 @import "scss/flow-master";
-
-
-
-
-
-.section{
-	background: #dadada;
-	min-height: 100vh;
-}
-.wrapper{
-	background: #f9f9f9;
-}
-
-
-.wrapper-fw{
-	background: #f9f9f9be;
-}
-
-.item{
-
-	height: 150px;
-	width: 150px;
-	padding: 1rem;
-}
-.inner{
-	background: #cccccc;
-	color: #444;
-	height: 100%;
-	width: 100%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
