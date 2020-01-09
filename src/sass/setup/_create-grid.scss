@@ -1,0 +1,24 @@
+// LEVEL 1: WRAPPER //
+.wrapper {
+	@include make-wrapper();
+	@include make-wrapper-max-widths();
+}
+
+.wrapper-fw {
+	@include make-wrapper();
+}
+
+// LEVEL 2: CONTAINER //
+
+.container {
+	// make container
+	@include make-container();
+	@include make-container-max-widths();
+
+	&-fw{
+		@include make-fw-container();
+	}
+}
+
+// LEVEL 3: COLUMNS //
+@include make-grid-columns();

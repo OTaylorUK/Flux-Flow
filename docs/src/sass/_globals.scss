@@ -1,0 +1,97 @@
+/*
+GLOBALS
+*/
+
+// SECTIONS //
+.dark-bg{
+	background: #000000;
+	color: #ffffff;
+}
+
+.grey-bg{
+	background: #F9F9F9;
+	
+}
+
+section{
+	padding: 5rem 0;
+	&.cta{
+		padding: 0;
+	}
+	.title-container{
+		margin-bottom: 5rem;
+	}
+}
+
+.content-container{
+	.section{
+		margin-bottom: 7rem;
+		&:nth-last-child(1){
+			margin-bottom: 0;
+		}
+	}
+}
+
+.code-container{
+	background:white;
+	padding: 0.3rem;
+	border-radius: 0.3rem;
+	margin-top: 3rem;
+}
+
+.t-center{
+	*{
+		text-align: center;
+	}
+}
+
+
+.title-container{
+	min-width: 100px;
+	.title{
+		position: relative;
+		margin-bottom: 2rem;
+		padding-bottom: 1rem;
+		text-align: center;
+		color: inherit;
+		
+		&::after{
+			content: '';
+			position: absolute;
+			top: 100%;
+			left: 50%;
+			transform: translate(-50%, 0);
+			height: 1px;
+			width: 100px;
+			border-top: 1px white solid;
+			border-color: inherit;
+		}
+	}
+}
+
+// BUTTONS // 
+
+.buttons{
+	display: inline-flex;
+}
+.btn{
+	padding: 1rem 2rem;
+	margin: 1rem 2rem;
+	border: 1px$white solid;
+	border-radius: 0.8rem;
+	cursor: pointer;
+	display: inline-block;
+	&.focus{
+		border-color: $primary;
+		color: $primary;
+		&:hover{
+			color: $black;
+			background: $primary;
+		}
+	}
+	&:hover{
+		color: $black;
+		background: $white;
+	}
+
+}

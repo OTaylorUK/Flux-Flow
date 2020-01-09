@@ -1,7 +1,5 @@
 // Grid breakpoints
-//
-// Define the minimum dimensions at which your layout will change,
-// adapting to different screen sizes, for use in media queries.
+// Define the min dimensions for different screen sizes
 
 $grid-breakpoints: (
   xs: 0,
@@ -14,15 +12,10 @@ $grid-breakpoints: (
 @include _assert-ascending($grid-breakpoints, "$grid-breakpoints");
 @include _assert-starts-at-zero($grid-breakpoints, "$grid-breakpoints");
 
-
-// Grid containers
-//
-// Define the maximum width of `.container` for different screen sizes.
-
 $container-max-widths: (
   xs: 500px,
-  sm: 500px,
-  md: 700px,
+  sm: 600px,
+  md: 800px,
   lg: 900px,
   xl: 1200px,
 ) !default;

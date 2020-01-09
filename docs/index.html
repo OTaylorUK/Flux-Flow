@@ -6,30 +6,432 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-		<link rel="stylesheet"  type="text/css"  href="dist/css/style.min.css">
+		<link
+			href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Raleway:100,200,300,400,500,600,700,800,900&display=swap"
+			rel="stylesheet">
+			<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900|Raleway:100,200,300,400,500,600,700,800,900&amp;display=swap" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="/dist/css/flow.min.css">
+		<link rel="stylesheet" type="text/css" href="dist/css/style.min.css">
 
+		<!-- superslider -->
+		<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/superslider/dist/css/superSlider.min.css" />
 
-		<link rel="stylesheet"  type="text/css"  href="/dist/css/flow.min.css">
 
 		<title>Flow</title>
+
 	</head>
 
-	<body class="">
-			
-		<h1>test</h1>
-		<!-- wrapper
-		container
-		el-3 -->
-		<div class="wrapper">
+	<body>
+		<!-- NAV  -->
+		<header class="wrapper-fw navigation">
 			<div class="container">
-				<div class="col-4">4</div>
-				<div class="col">no size</div>
+				<div class="col-2 logo">
+					<div class="svg-container">
+						<object data="media/logo.svg" type=""></object>
+						<span class="logo-text">Flow</span>
+					</div>
+				</div>
+				<div class="col-10 nav">
+					<div class="menu-wrapper">
+						<ul class="menu">
+							<li><a data-target="get-started-section" class="link">Get started</a></li> 
+							<li><a data-target="examples-section" class="link">Examples</a></li> 
+							<li><a data-target="features-section" class="link">Features</a></li> 
+							<li class="cta"> <a data-target="download-section" class="link">Download</a></li> 
+						</ul>
+					</div> 
+					<div class="hamburger-container">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+				</div>
+			</div>
+		</header>
 
-				<div class="col-12 col-md-8">4</div>
+		<!-- HERO -->
+		<div class="wrapper-fw hero dark-bg">
+			<div class="container content-container t-center">
+				<div class="col  content">
+					<div class="title-container">
+						<h1 class="title">A lightweight front-end responsive grid layout</h1>
+					</div>
+				
+					<div class="buttons">
+						<a class="btn focus"> Get Started</a>
+						<a class="btn">Download</a>
+					</div>
+				</div>
+			</div>
+			<div class="container-fw video-container">
+				<video class="video" autoplay muted loop id="myVideo">
+					<source src="media/hero-clip.mp4" type="video/mp4">
+					Any alternate text.
+				</video>
 			</div>
 		</div>
 
-		
+		<!-- DOWNLOAD -->
+		<section class="wrapper-fw download cta grey-bg">
+			<div class="container-fw ">
+				<div class="col col-lg-4">
+					<div class="content">
+						<div class="icon">
+							<object data="media/download-icon.svg" type=""></object>
+						</div>
+						<div class="header alt">
+							<h3>Install</h3>
+						</div>
+						<p class="text alt">To include all of Flow's folders in your project via npm in the terminal. Download the latest version of Flow with the following command in your terminal line.</p>
+						<div class="code-container">
+							<div class="jsdelivr code-wrapper">
+								<pre>
+<code class="language-html">
+$ npm install flow
+
+</code></pre>
+							</div>
+
+						</div>
+					</div>
+				</div>
+				<div class="col col-lg-4">
+					<div class="content">
+						<div class="icon">
+							<object data="media/cloud-icon.svg" type=""></object>
+
+						</div>
+						<div class="header alt">
+							<h3>CDN</h3>
+						</div>
+						<p class="text alt">If you don't need all of the files you can simply link to the compiled style sheet using this dedicated CDN. </p>
+						<div class="code-container">
+							<div class="jsdelivr code-wrapper">
+								<pre>
+<code class="language-html">
+&lt;link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/superslider/dist/css/flow.min.css"/&gt
+
+</code></pre>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col col-lg-4">
+					<div class="content">
+						<div class="icon">
+							<object data="media/download-icon.svg" type=""></object>
+
+						</div>
+						<div class="header alt">
+							<h3>Download</h3>
+						</div>
+						<p class="text alt">If you'd rather just downloading the files that you need you can simply download them using the GitHub repo</p>
+						<div class="button-container">
+							<a class="btn focus">Download</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- GET STARTED -->
+		<section class="wrapper-fw get-started dark-bg">
+			<div class="container">
+				<div class="col title-container">
+					<h2 class="title">Get Started</h2>
+				</div>
+				<div class="col content-container">
+					<div class="section basic-template">
+						<div class="text">
+							<h3 class="header alt">Basic Template</h3>
+							<p class="text"></p>
+						</div>
+						<div class="code-container">
+							<div class="jsdelivr code-wrapper">
+								<pre>
+	<code class="language-html">
+&lt;div class="wrapper"&gt
+	&lt;div class="container"&gt
+		&lt;div class="col col-sm-10 col-md-8 col-lg-6"&gt&lt;/div&gt
+		&lt;div class="col col-sm-10 col-md-8 col-lg-6"&gt&lt;/div&gt
+		&lt;div class="col col-sm-10 col-md-8 col-lg-6"&gt&lt;/div&gt
+	&lt;/div&gt
+&lt;/div&gt
+	</code></pre>
+							</div>
+
+						</div>
+					</div>
+					<div class="section basic-template">
+						<div class="text">
+							<h3 class="header alt">Basic Template</h3>
+							<p class="text alt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum in
+								accusamus repellendus earum libero? Cumque dolor officiis veritatis ex maiores, debitis
+								in enim reiciendis? Error?</p>
+						</div>
+						<div class="code-container">
+							<div class="jsdelivr code-wrapper">
+								<pre>
+<code class="language-html">
+&lt;div class="wrapper"&gt
+	&lt;div class="container"&gt
+		&lt;div class="col col-sm-10 col-md-8 col-lg-6"&gt&lt;/div&gt
+		&lt;div class="col col-sm-10 col-md-8 col-lg-6"&gt&lt;/div&gt
+		&lt;div class="col col-sm-10 col-md-8 col-lg-6"&gt&lt;/div&gt
+	&lt;/div&gt
+&lt;/div&gt
+
+</code></pre>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- EXAMPLES -->
+		<section class="wrapper-fw examples">
+			<div class="container">
+				<div class="col title-container">
+					<h2 class="title">Examples</h2>
+				</div>
+
+				<div class="col content-container">
+					<div class="section wrapper-example">
+						<div class="text">
+							<h3 class="header alt">Wrapper</h3>
+							<p class="text alt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum in
+								accusamus repellendus earum libero? Cumque dolor officiis veritatis ex maiores, debitis
+								in enim reiciendis? Error?</p>
+						</div>
+						<div class="example-container">
+							<div class="example-box wrapper-box"><span>.wrapper</span></div>
+							<div class="example-box wrapper-box-fw"><span>.wrapper-fw</span></div>
+						</div>
+						<div class="code-container">
+							<div class="jsdelivr code-wrapper">
+								<pre>
+<code class="language-html">
+&lt;div class="wrapper"&gt
+	&lt;div class="container"&gt
+		&lt;div class="col col-sm-10 col-md-8 col-lg-6"&gt&lt;/div&gt
+		&lt;div class="col col-sm-10 col-md-8 col-lg-6"&gt&lt;/div&gt
+		&lt;div class="col col-sm-10 col-md-8 col-lg-6"&gt&lt;/div&gt
+	&lt;/div&gt
+&lt;/div&gt
+
+</code></pre>
+							</div>
+
+						</div>
+					</div>
+					<div class="section wrapper-example">
+						<div class="text">
+							<h3 class="header alt">Container</h3>
+							<p class="text alt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum in
+								accusamus repellendus earum libero? Cumque dolor officiis veritatis ex maiores, debitis
+								in enim reiciendis? Error?</p>
+						</div>
+						<div class="example-container">
+							<div class="example-box wrapper-box">
+								<div class="example-box container-box"><span>.container</span></div>
+								<div class="example-box container-box-fw"><span>.container-fw</span></div>
+							</div>
+						</div>
+						<div class="code-container">
+							<div class="jsdelivr code-wrapper">
+								<pre>
+<code class="language-html">
+&lt;div class="wrapper"&gt
+	&lt;div class="container"&gt
+		&lt;div class="col col-sm-10 col-md-8 col-lg-6"&gt&lt;/div&gt
+		&lt;div class="col col-sm-10 col-md-8 col-lg-6"&gt&lt;/div&gt
+		&lt;div class="col col-sm-10 col-md-8 col-lg-6"&gt&lt;/div&gt
+	&lt;/div&gt
+&lt;/div&gt
+
+</code></pre>
+							</div>
+
+						</div>
+					</div>
+					<div class="section wrapper-example">
+						<div class="text">
+							<h3 class="header alt">Column</h3>
+							<p class="text alt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum in
+								accusamus repellendus earum libero? Cumque dolor officiis veritatis ex maiores, debitis
+								in enim reiciendis? Error?</p>
+						</div>
+						<div class="example-container">
+							<div class="example-box wrapper-box">
+								<div class="example-box container-box">
+									<div class="example-box col-box"><span>.col</span></div>
+									<div class="example-box col-box-12"><span>.col-12</span></div>
+									<div class="example-box col-box-6"><span>.col-6</span></div>
+									<div class="example-box col-box-4"><span>.col-4</span></div>
+									<div class="example-box col-box-2"><span>.col-2</span></div>
+								</div>
+							</div>
+						</div>
+						<div class="code-container">
+							<div class="jsdelivr code-wrapper">
+								<pre>
+<code class="language-html">
+&lt;div class="wrapper"&gt
+	&lt;div class="container"&gt
+		&lt;div class="col col-sm-10 col-md-8 col-lg-6"&gt&lt;/div&gt
+		&lt;div class="col col-sm-10 col-md-8 col-lg-6"&gt&lt;/div&gt
+		&lt;div class="col col-sm-10 col-md-8 col-lg-6"&gt&lt;/div&gt
+	&lt;/div&gt
+&lt;/div&gt
+
+</code></pre>
+							</div>
+
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</section>
+
+		<!-- FEATURE TABLE -->
+		<section class="wrapper-fw class dark-bg">
+			<div class="container">
+				<div class="col title-container">
+					<h2 class="title">Flow Classes</h2>
+				</div>
+
+				<div class="col content-container">
+					<form>
+						<div class="search-field-wrapper">
+							<input id="search-field" type="text" placeholder="Search">
+						</div>
+					</form>
+					<div class="feature-table">
+						<div class="feature-item">
+							<div class="inner">
+								<h4 class="header">.wrapper-fw</h4>
+								<p class="information">Wrapper stretches to fill the entire width of the window.</p>
+							</div>
+
+						</div>
+						<div class="feature-item">
+							<div class="inner">
+								<h4 class="header">.wrapper</h4>
+								<p class="information">Wrapper width is responsive depending on the window size.</p>
+							</div>
+
+						</div>
+						<div class="feature-item">
+							<div class="inner">
+								<h4 class="header">.container-fw</h4>
+								<p class="information">Container stretches to fill the entire width of the wrapper
+									container.</p>
+							</div>
+						</div>
+						<div class="feature-item">
+							<div class="inner">
+								<h4 class="header">.container</h4>
+								<p class="information">Container width is responsive depending on the window size.</p>
+							</div>
+						</div>
+						<div class="feature-item">
+							<div class="inner">
+								<h4 class="header">.col</h4>
+								<p class="information">Default column class that will stretch to fill the entire
+									container.</p>
+							</div>
+						</div>
+						<div class="feature-item">
+							<div class="inner">
+								<h4 class="header">.col-[sm/md/lg/xl]-[]</h4>
+								<p class="information">Column stretches to the number of defined columns once the
+									breakpoint has been reached. e.g. '.col-md-10'.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</section>
+
+		<!-- MORE TOOLS -->
+		<section class="wrapper-fw more-tools grey-bg">
+			<div class="container">
+				<div class="col title-container">
+					<h2 class="title">More tools</h2>
+				</div>
+
+				<div class="col content-container">
+					<div class="slider-container">
+						<div class="slider" id="slider-more-tools">
+							<div class="feature-tool">
+								<div class="inner">
+									<h3 class="header">superslider</h3>
+									<p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare
+										nulla consectetur vel.</p>
+									<a class="btn" href="http://" target="_blank" rel="noopener noreferrer">See More</a>
+
+								</div>
+							</div>
+							<div class="feature-tool">
+								<div class="inner">
+									<h3 class="header">Flow</h3>
+									<p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare
+										nulla consectetur vel.</p>
+									<a class="btn" href="http://" target="_blank" rel="noopener noreferrer">See More</a>
+
+								</div>
+							</div>
+							<div class="feature-tool">
+								<div class="inner">
+									<h3 class="header">Coming Soon</h3>
+									<p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare
+										nulla consectetur vel.</p>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- FOOTER -->
+		<footer class="wrapper-fw footer dark-bg">
+			<div class="container">
+				<div class="col">
+					<div class="svg-container">
+						<object data="media/logo.svg" type=""></object>
+						<span class="logo-text">Flow</span>
+					</div>
+				</div>
+				<div class="col">
+					<div class="menu-wrapper">
+						<ul class="menu">
+							<li><a data-target="get-started-section" class=" link">Get started</a</li> 
+							<li><a data-target="examples-section" class="link">Examples</a</li> 
+							<li><a data-target="features-section" class="link">Features</a</li> 
+							<li class="cta"><a data-target="download-section" class="link">Download</a</li> 
+						</ul>
+					</div> 
+				</div>
+			</div>
+			<div class="container credit">
+				<a href="https://virtualjungle.co.uk/" target="_blank" rel="noopener noreferrer">Created with <span class="link-highlight">&#x2764;</span> by Virtual Jungle</a>
+			</div>
+		</footer>
+
+		<!-- jquery -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+		<!-- page javascript-->
+		<script src="src/js/main.js" type="text/javascript" charset="utf-8"></script>
+
+		<!-- superslider -->
+		<script type="text/javascript" src="//cdn.jsdelivr.net/npm/superslider/dist/js/superSlider.min.js"></script>
 
 	</body>
 

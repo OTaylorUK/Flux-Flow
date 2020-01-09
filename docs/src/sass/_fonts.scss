@@ -1,0 +1,77 @@
+/*
+FONTS
+*/
+
+body{
+	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+
+p,h1,h2,h3,h4,h5,a,li,span{
+	color: inherit;
+	font-family: inherit;
+}
+
+h3{
+	font-size: 2rem;
+	text-transform: capitalize;
+}
+
+
+
+
+
+.header{
+	margin-bottom: 1rem;
+
+	&.alt{
+		font-family: $secondaryFont;
+
+	}
+}
+
+.text{
+	&.alt{
+		font-family: $secondaryFont;
+
+	}
+}
+
+h1,h2,h3,h4,h5{
+	font-weight: bold;
+}
+
+p{
+	font-family: $secondaryFont;
+	font-weight: lighter;
+	line-height: 150%;
+	font-size: 1.1rem;
+
+	&.header{
+		font-size: 1.3rem;
+	}
+}
+
+a{
+	&.link{
+		font-size: 1.1rem;
+	}
+}
+
+span{
+	&.logo-text{
+		font-family: $primaryFont;
+		font-weight: lighter;
+		letter-spacing: 0.1rem;
+	}
+}
+
+h1{
+	font-size: 5.5rem;
+	&:after{
+		display: none;
+	}
+}
+
+h2{
+	font-size: 4rem;
+}
