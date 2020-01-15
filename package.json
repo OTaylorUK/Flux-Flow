@@ -1,0 +1,27 @@
+{
+  "name": "flux-flow",
+  "version": "1.0.0",
+  "description": "View example: https://otayloruk.github.io/Flow/",
+  "main": "./dist/flow.min.css",
+  "files": [
+    "/dist/"
+  ],
+  "keywords": [
+    "grid",
+    "layout",
+    "responsive",
+    "structure",
+    "library"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OTaylorUK/Flow.git"
+  },
+  "author": "Ollie Taylor",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/OTaylorUK/Flow/issues"
+  },
+  "homepage": "https://otayloruk.github.io/Flow/"
+
+}
