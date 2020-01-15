@@ -1,7 +1,7 @@
 {
   "name": "flux-flow",
   "version": "1.0.1",
-  "description": "View example: https://otayloruk.github.io/Flow/",
+  "description": "View example: https://otayloruk.github.io/Flux-Flow/",
   "main": "./dist/flow.min.css",
   "files": [
     "/dist/"
@@ -15,12 +15,12 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/OTaylorUK/Flow.git"
+    "url": "git+https://github.com/OTaylorUK/Flux-Flow.git"
   },
   "author": "Ollie Taylor",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/OTaylorUK/Flow/issues"
+    "url": "https://github.com/OTaylorUK/Flux-Flow/issues"
   },
-  "homepage": "https://otayloruk.github.io/Flow/"
+  "homepage": "https://otayloruk.github.io/Flux-Flow/"
 }
