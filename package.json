@@ -1,6 +1,6 @@
 {
   "name": "flux-flow",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "View example: https://otayloruk.github.io/Flux-Flow/",
   "main": "./dist/flow.min.css",
   "files": [
