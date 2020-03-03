@@ -27,6 +27,7 @@
 	margin-left: auto;
 	padding-right: $container-padding-x;
 	padding-left: $container-padding-x;
+	flex: 1 0 auto;
 }
 
 @mixin make-fw-container(){
