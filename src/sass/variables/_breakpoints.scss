@@ -13,7 +13,7 @@ $grid-breakpoints: (
 @include _assert-starts-at-zero($grid-breakpoints, "$grid-breakpoints");
 
 $container-max-widths: (
-  xs: 100%,
+  xs: 540px,
   sm: 540px,
   md: 720px, 
   lg: 960px,
