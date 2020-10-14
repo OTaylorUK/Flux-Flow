@@ -15,7 +15,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/OTaylorUK/Flux-Flow.git"
+    "url": "git+https://github.com/OTaylorUK/Flux-Flow.git#master"
   },
   "author": "Ollie Taylor",
   "license": "MIT",
